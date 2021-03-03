@@ -28,33 +28,31 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'Zuzan';
-$string['modulenameplural'] = 'Zuzans';
-$string['modulename_help'] = 'Use the Zuzan module for videoconference. These videoconferences will use your Moodle username by displaying your username and avatar in videoconferences.
-
-Zuzan-meet is an open-source videoconferencing solution that enables you to easily build and implement secure video conferencing solutions.';
-$string['jitsi:addinstance'] = 'Add a new Zuzan Meet item';
-$string['jitsi:moderation'] = 'Zuzan Moderation';
+$string['modulename'] = 'Zuzan Meet';
+$string['modulenameplural'] = 'Zuzan Meet';
+$string['modulename_help'] = 'Use the Zuzan Meet module for videoconference. These videoconferences will use your Moodle username by displaying your username and avatar in videoconferences. Zuzan Meet-meet is an open-source videoconferencing solution that enables you to easily build and implement secure video conferencing solutions.';
+$string['jitsi:addinstance'] = 'Add a new Zuzan Meet Meet item';
+$string['jitsi:moderation'] = 'Zuzan Meet Moderation';
 $string['jitsi:sharedesktop'] = 'Share Desktop';
-$string['jitsi:view'] = 'View Zuzan';
+$string['jitsi:view'] = 'View Zuzan Meet';
 $string['jitsiname'] = 'Session name';
-$string['jitsi'] = 'Zuzan';
-$string['pluginadministration'] = 'Zuzan administration';
-$string['pluginname'] = 'Zuzan';
+$string['jitsi'] = 'Zuzan Meet';
+$string['pluginadministration'] = 'Zuzan Meet administration';
+$string['pluginname'] = 'Zuzan Meet';
 $string['instruction'] = 'Click the button to access';
 $string['access'] = 'Access';
 $string['calendarstart'] = 'The videoconference \'{$a}\' start';
 $string['allow'] = 'Start of videoconference';
 $string['nostart'] = 'The session has not started. You can access {$a} minutes before the start';
-$string['server'] = 'Zuzan Server';
-$string['serverexpl'] = 'Zuzan Server url';
-$string['privacy:metadata:jitsi'] = 'In order to integrate with a Zuzan session, user data needs to be exchanged with that service.';
-$string['privacy:metadata:jitsi:username'] = 'The username is sent from moodle to show to the other users of the Zuzan session';
-$string['privacy:metadata:jitsi:avatar'] = 'The avatar is sent from moodle to show to the other users of the Zuzan session';
-$string['noviewpermission'] = 'You do not have permission for view this Zuzan session';
+$string['server'] = 'Zuzan Meet Server';
+$string['serverexpl'] = 'Zuzan Meet Server url';
+$string['privacy:metadata:jitsi'] = 'In order to integrate with a Zuzan Meet session, user data needs to be exchanged with that service.';
+$string['privacy:metadata:jitsi:username'] = 'The username is sent from moodle to show to the other users of the Zuzan Meet session';
+$string['privacy:metadata:jitsi:avatar'] = 'The avatar is sent from moodle to show to the other users of the Zuzan Meet session';
+$string['noviewpermission'] = 'You do not have permission for view this Zuzan Meet session';
 $string['minpretime'] = 'Minutes to access';
 $string['help'] = 'Help';
-$string['helpex'] = 'Instruction text for show at Zuzan activity';
+$string['helpex'] = 'Instruction text for show at Zuzan Meet activity';
 $string['identification'] = 'ID User';
 $string['identificationex'] = 'ID to show in the session';
 $string['username'] = 'Username';
