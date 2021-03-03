@@ -125,6 +125,7 @@ $desktop = '';
 if (has_capability('mod/jitsi:sharedesktop', $context)) {
     $desktop = 'desktop';
 }
+$desktop = 'desktop';
 
 $youtubeoption = '';
 if ($CFG->jitsi_shareyoutube == 1) {
@@ -185,5 +186,7 @@ if ($CFG->jitsi_password != null) {
 }
 
 echo "</script>\n";
-echo "<a href=\"https://sboard.online/auto/register/?email=".$email."&name=".$nombre."&origin=1&token=TOKEN\">Sboard</a>";
+$sboard_token  = hash("sha256", base64_encode($nombre));
+
+echo "<a href=\"https://sboard.online/auto/register/?email=".$email."&name=".$nombre."&origin=1&token=".$sboard_token."\">Нажмите, что бы открыть SBoard</a>";
 echo $OUTPUT->footer();
