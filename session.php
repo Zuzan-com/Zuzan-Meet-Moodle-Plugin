@@ -37,6 +37,7 @@ $session = required_param('ses', PARAM_TEXT);
 $sessionnorm = str_replace(array(' ', ':', '"'), '', $session);
 $avatar = required_param('avatar', PARAM_TEXT);
 $teacher = required_param('t', PARAM_BOOL);
+$email = required_param('email', PARAM_TEXT);
 require_login($courseid);
 
 $PAGE->set_title($session);
@@ -184,5 +185,5 @@ if ($CFG->jitsi_password != null) {
 }
 
 echo "</script>\n";
-
+echo "<a href=\"https://sboard.online/auto/register/?email=".$email."&name=".$nombre."&origin=1&token=TOKEN\">Sboard</a>";
 echo $OUTPUT->footer();

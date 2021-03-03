@@ -118,8 +118,9 @@ for ($i = 0; $i < $max; $i++) {
 }
 
 $avatar = $CFG->wwwroot.'/user/pix.php/'.$USER->id.'/f1.jpg';
+$email = $USER->email;
 $urlparams = array('avatar' => $avatar, 'nom' => $nom, 'ses' => $sesparam,
-    'courseid' => $course->id, 'cmid' => $id, 't' => $moderation);
+    'courseid' => $course->id, 'cmid' => $id, 't' => $moderation, 'email' => $email);
 
 $today = getdate();
 if ($today[0] > (($jitsi->timeopen) - ($jitsi->minpretime * 60))||
