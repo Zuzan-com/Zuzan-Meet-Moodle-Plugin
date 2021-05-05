@@ -35,7 +35,7 @@ $cmid = required_param('cmid', PARAM_INT);
 $nombre = required_param('nom', PARAM_TEXT);
 $session = required_param('ses', PARAM_TEXT);
 $sessionnorm = str_replace(array(' ', ':', '"'), '', $session);
-$avatar = required_param('avatar', PARAM_TEXT);
+$avatar = $CFG->jitsi_showavatars == true ? required_param('avatar', PARAM_TEXT) : null;
 $teacher = required_param('t', PARAM_BOOL);
 $email = required_param('email', PARAM_TEXT);
 require_login($courseid);
